@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 
-function ListGroup({ items, heading }) {
+function ListGroup({ items, heading, onSelectItem }) {
   const [selectedItem, setSelectedItem] = useState(-1);
 
   return (
@@ -18,7 +18,10 @@ function ListGroup({ items, heading }) {
                   ? "list-group-item active"
                   : "list-group-item"
               }
-              onClick={() => setSelectedItem(index)}
+              onClick={() => {
+                setSelectedItem(index);
+                onSelectItem(item);
+              }}
             >
               {item}
             </li>
