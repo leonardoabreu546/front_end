@@ -1,13 +1,11 @@
 import { Fragment, useState } from "react";
 
-const items = ["Funchal", "Santa Cruz", "Câmara de Lobos", "Ribeira Brava"];
-
-function ListGroup() {
+function ListGroup({ items, heading }) {
   const [selectedItem, setSelectedItem] = useState(-1);
 
   return (
     <Fragment>
-      <h1>Lista de Municípios</h1>
+      <h1>{heading}</h1>
       {items.length === 0 ? (
         <p>Não há itens na lista.</p>
       ) : (
