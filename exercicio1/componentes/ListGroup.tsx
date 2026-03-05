@@ -18,3 +18,17 @@ function ListGroup() {
 }
 
 export default ListGroup;
+
+function contador() {
+  let count = 0;
+  return function () {
+    count++;
+    console.log(count);
+  };
+}
+
+const incrementa = contador();
+incrementa();
+
+
+
