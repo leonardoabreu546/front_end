@@ -1,0 +1,32 @@
+[
+  {
+    "brand": "Toyota",
+    "model": "Corolla",
+    "seats": 5,
+    "plate": "AA-00-BB"
+  },
+  {
+    "brand": "Honda",
+    "model": "Civic",
+    "seats": 5,
+    "plate": "CC-11-DD"
+  },
+  {
+    "brand": "Ford",
+    "model": "Focus",
+    "seats": 5,
+    "plate": "EE-22-FF"
+  },
+  {
+    "brand": "BMW",
+    "model": "X5",
+    "seats": 7,
+    "plate": "GG-33-HH"
+  },
+  {
+    "brand": "Mercedes",
+    "model": "Classe A",
+    "seats": 5,
+    "plate": "II-44-JJ"
+  }
+]
