@@ -4,31 +4,35 @@ function ListGroup({ items, heading, onSelectItem }) {
   const [selectedItem, setSelectedItem] = useState(-1);
 
   return (
-    <Fragment>
-      <h1>{heading}</h1>
+    <div className="container mt-4">
+      <h1 className="mb-3">{heading}</h1>
+
       {items.length === 0 ? (
-        <p>Não há itens na lista.</p>
+        <div className="alert alert-warning">
+          Não há itens na lista.
+        </div>
       ) : (
-        <ul className="list-group">
+        <ul className="list-group shadow-sm">
           {items.map((item, index) => (
             <li
               key={item}
               className={
                 selectedItem === index
                   ? "list-group-item active"
-                  : "list-group-item"
+                  : "list-group-item list-group-item-action"
               }
               onClick={() => {
                 setSelectedItem(index);
                 onSelectItem(item);
               }}
+              style={{ cursor: "pointer" }}
             >
               {item}
             </li>
           ))}
         </ul>
       )}
-    </Fragment>
+    </div>
   );
 }
 

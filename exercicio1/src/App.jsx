@@ -1,5 +1,6 @@
 import ListGroup from "./components/ListGroup";
 import Contador from "./components/contador";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const municipios = ["Funchal", "Santa Cruz", "Câmara de Lobos", "Ribeira Brava"];
 
