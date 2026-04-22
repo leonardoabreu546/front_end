@@ -12,3 +12,5 @@ function Contador () {
         </div>
     )
 }
+
+export default Contador;
